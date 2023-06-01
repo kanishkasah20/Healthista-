@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
+.navbar-li,li{
+  list-style: none;
+  display: inline-block;
+  padding: 9px 10px;
+  position:relative;
+  font-size: 18px;  
+  margin-top: 2px;
+}
+  
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Geologica', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0.5% 4%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(126, 126, 160);
+  
+}
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/yoga1.jpg");
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    margin-top: 150px;
+    margin-left:75px;
+    font-family: 'Geologica', sans-serif;
+}
