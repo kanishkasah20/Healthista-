@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index: 10;;
+}
+.container-fluid{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+.navbar-brand img{
+    height: 70px;
+    padding-left: 10px;
+}
+.navbar-nav li{
+    padding: 0 20px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+
+/* header section */
+#header{
+    height: 100vh;
+    background-image: url(../images/smile1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    
+  }
+#center h1 {
+    font-size: 3.40rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-decoration: #fff;
+    color: rgb(51, 40, 62);
+  }
+ #center h1 span{
+    color: rgb(81, 126, 128);
+
+  }
+#header h3{
+    font-size: 2rem;
+    text-align:initial;
+    font-weight: 320;
+    margin-bottom:1rem ;
+    color: brown;
+   
+ }
