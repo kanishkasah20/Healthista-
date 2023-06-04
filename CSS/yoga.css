@@ -33,12 +33,467 @@ header {
     min-height: 100vh;
     width: 100%;
     background-image: url("../images/yoga1.jpg");
-    position: fixed;
+    position: relative;
     background-position: center;
     background-size: cover;
+    margin-top: -55px;
+
 }
 .card{
     margin-top: 150px;
     margin-left:75px;
     font-family: 'Geologica', sans-serif;
+}
+.benefits{
+  color: #00171f;
+  background-color: white;
+}
+
+.benefits h1 {
+  padding-top: 5%;
+}
+
+.benefits .bfit {
+  display: flex;
+}
+
+.bfit img{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.btext{
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 0.5rem 1.5rem;
+}
+.bfit img{
+  width: 35%;
+}
+
+.btext .yoga-text{
+  display: flex;
+  margin: 0.8em 0;
+}
+
+.btext .yoga-text i{
+    margin: 10px 5px;
+}
+
+/* s\card section */
+#asanshereblock{
+  margin-left: -80px;
+  padding: 0px 50px 80px;
+}
+#card25{
+  background-color: #4f566b;
+  
+}
+.card-body{
+  background-color: rgb(222, 203, 226);
+  font-family: 'Geologica', sans-serif;
+}
+.cardlink{
+  text-decoration: none;
+}
+#h1asanas{
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 60px;
+  color: white;
+  
+}
+/* button read more */
+
+.btn {
+	outline: none;
+	position: relative;
+	padding: 20px 50px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: transparent;
+	border-radius: 60px;
+	border: none;
+	margin-top: 40px;
+	text-align: center;
+}
+
+button span {
+	position: relative;
+	right: 10px;
+	z-index: 1;
+	color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 7px;
+}
+
+button .flow {
+	position: absolute;
+	left: 0;
+	top: -80px;
+	width: 250px;
+	height: 200px;
+	background: #6d3a74;
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+button:hover .flow {
+	top: -120px;
+}
+
+button .flow:before,
+button .flow:after {
+	content: '';
+	position: absolute;
+	width: 180%;
+	height: 200%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -75%);
+}
+
+button .flow:before {
+	border-radius: 45%;
+	background: rgb(222, 203, 226);
+	animation: swing 5s linear infinite;
+}
+
+button .flow:after {
+	border-radius: 40%;
+	background: rgba(20, 20, 20, 0.5);
+	animation: swing 10s linear infinite;
+}
+.btn-wrapper{
+  padding-left: 550px;
+}
+
+@keyframes swing {
+	0% {
+		transform: translate(-50%, -75%) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(-50%, -75%) rotate(360deg);
+	}
+}
+
+
+
+
+
+/*Videos section*/
+.videos{
+  padding: 2rem 0;
+  background-color: #adb5bd;
+}
+
+.videos .flip-card {
+  padding: 1em 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .open {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .aasan1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .aasan1-img, .atext{
+    width: 100%;
+  }
+  .bfit {
+    flex-direction: column;
+    height: auto;
+  }
+  .benefits img {
+    width: 100%;
+  }
+  .more{
+    width: 40%;
+  }
+  .btext{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .videos iframe{
+    width: 100%;
+  }
+  .more{
+    width: 90%;
+  }
+  .text{
+    top: 20%;
+  }
+}
+/* footer */
+footer{
+  font-family: "Poppins",sans-serif;
+}
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: rgb(6, 16, 37);
+}
+
+.footer-side-col{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
+}
+
+.footer-side-col > .col{
+  padding: 2.5rem;
+  flex-wrap: nowrap;
+}
+
+.footer-container > .col {
+  padding: 2.5rem;
+  flex-basis: 20%;
+  color: white;
+}
+
+.footer-container .col a:hover,
+footer a:focus {
+  color: cyan;
+}
+
+@media (max-width: 1120px){
+  .footer-side-col{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 730px) {
+  .footer-container {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-container .col {
+    padding: 2rem;
+    flex-basis: 31%;
+  }
+
+  .footer-container p {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-side-col{
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto,auto);
+  }
+
+  .footer-container .col {
+    padding: 1rem;
+    flex-basis: 100%;
+  }
+}
+
+.footer-container .col a {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.footer-container .col ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-container .col ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer-container p {
+  color: white;
+}
+
+.footer-container .col ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-container .col ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footer-container p {
+  margin-top: 0.5rem;
+}
+.footerpara{
+  margin-left: -10px;
+}
+
+.footer-container .col .email-id {
+  word-wrap: break-word;
+  text-decoration: underline;
+}
+
+.email-id a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container .col h3 {
+  color: rgb(228, 26, 77);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-family: "Ubuntu",sans-serif;
+}
+.footer-container .col img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  cursor: pointer;
+}
+.footer-container .col .footerheading {
+  display: flex;
+  color:white ;
+  margin-top: 2.2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer-container .col .footerpara {
+  display: flex;
+  margin-top: -12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 4px;
+  justify-content: center;
+  cursor: pointer;
+}
+.fab:hover {
+  text-decoration: none;
+}
+
+.footer-container .col .sukoon {
+  color: rgb(30, 240, 191);
+  letter-spacing: 5px;
+}
+
+.footer-container .col .social-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-container .col .social-menu ul a {
+  color: white;
+}
+.footer-container .col .social-menu ul a li{
+  transition: transform 250ms ease-out;
+}
+
+.footer-container .col .social-menu ul a li:hover {
+  transform: scale(1.4) !important;
+  text-decoration: none !important;
+}
+.footer-container .col .social-menu ul a li#social-twitter:hover{
+  color: 	#1DA1F2;
+}
+.footer-container .col .social-menu ul a li#social-github{
+  transition: transform  250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
+}
+.footer-container .col .social-menu ul a li#social-github:hover{
+  transform: scale(1.2) !important;
+  color:black;
+  background-color: whitesmoke;
+  padding: 2px 2px 0px 2px;
+  border-radius: 25px;
+}
+.footer-container .col .social-menu ul a li#social-linkedin:hover{
+  color: #0A66C2;
+}
+
+.footer-container .col ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.footer-container .col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .footer-container .col ul li {
+    text-align: center;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-container .col .social-menu ul {
+    justify-content: center;
+  }
+}
+
+.footercontent{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
