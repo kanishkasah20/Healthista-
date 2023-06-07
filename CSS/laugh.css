@@ -46,7 +46,7 @@ body{
 /* header section */
 #header{
     height: 100vh;
-    background-image: url(../images/laugh1.jpg);
+    background-image: url(../images/laugh/laugh1.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -219,7 +219,7 @@ body{
     margin-bottom: 2.5%;
   }
 
-  /* vedios */
+  /*-- vedios ---*/
   .video {
     box-sizing: border-box;
     float: left;
