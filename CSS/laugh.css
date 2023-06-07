@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -162,6 +164,7 @@ body{
     position: relative;
     margin: auto;
   }
+  
   
   .prev, .next {
     cursor: pointer;
@@ -373,6 +376,20 @@ footer a:focus {
   .footer-container .col ul li a {
     text-decoration: none;
     color: white;
+  }
+  @media screen and (max-width: 600px) {
+  
+    .footer-container .col ul li {
+      text-align: center;
+    }
+  
+    .footer-container {
+      text-align: center;
+    }
+  
+    .footer-container .col .social-menu ul {
+      justify-content: center;
+    }
   }
   .footercontent{
     margin-right: auto;
