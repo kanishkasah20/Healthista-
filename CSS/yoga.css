@@ -77,9 +77,43 @@ header {
     position: relative;
     background-position: center;
     background-size: cover;
-    margin-top: -60px;
-
+    margin-top: 0%;
 }
+
+/* home pg ke blur  box ke liye */
+.filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  padding: 0.5em;
+}
+
+.text h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.text p {
+  color: #adb5bd;
+  font-size: 1.5rem;
+}
+
+.container-glass {
+  background: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
+}
+/* ----- */
+
 .card{
     margin-top: 150px;
     margin-left:75px;
@@ -138,12 +172,24 @@ header {
 .cardlink{
   text-decoration: none;
 }
+
+.card{
+  margin:3%;
+  margin-left: 8%;
+}
 #h1asanas{
   text-align: center;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bolder;
-  font-size: 60px;
-  color: white;
+  /* font-size: 50px; */
+  /* color: white; */
+  font-size: 2.3rem;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin: 0.2rem 0;
+  text-align: center;
+  color:white;
+  text-shadow: 2.5px 2px 1px white;
   
 }
 /* button read more */
@@ -300,243 +346,142 @@ button .flow:after {
     top: 20%;
   }
 }
-/* footer */
-footer{
-  font-family: "Poppins",sans-serif;
-}
-.footer-container {
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  background-color: rgb(66, 82, 116);
-}
 
-.footer-side-col{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  width: 80%;
-}
-
-.footer-side-col > .col{
-  padding: 2.5rem;
-  flex-wrap: nowrap;
-}
-
-.footer-container > .col {
-  padding: 2.5rem;
-  flex-basis: 20%;
-  color: white;
-}
-
-.footer-container .col a:hover,
-footer a:focus {
-  color: cyan;
-}
-
-@media (max-width: 1120px){
-  .footer-side-col{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+  /*--- footer ---*/
+  footer{
+    font-family: "Poppins",sans-serif;
   }
-}
-
-@media (max-width: 730px) {
   .footer-container {
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .footer-container .col {
-    padding: 2rem;
-    flex-basis: 31%;
-  }
-
-  .footer-container p {
-    color: white;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-side-col{
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto,auto);
-  }
-
-  .footer-container .col {
-    padding: 1rem;
-    flex-basis: 100%;
-  }
-}
-
-.footer-container .col a {
-  display: inline-block;
-  position: relative;
-  color: white;
-}
-
-.footer-container .col ul li a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: cyan;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.footer-container .col ul li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.footer-container p {
-  color: white;
-}
-
-.footer-container .col ul li a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: cyan;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.footer-container .col ul li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.footer-container p {
-  margin-top: 0.5rem;
-}
-.footerpara{
-  margin-left: -10px;
-}
-
-.footer-container .col .email-id {
-  word-wrap: break-word;
-  text-decoration: underline;
-}
-
-.email-id a{
-  text-decoration: none;
-  color: white;
-}
-
-.footer-container .col h3 {
-  color: rgb(228, 26, 77);
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-left: 30px;
-  font-weight: 900;
-  font-family: "Ubuntu",sans-serif;
-}
-.footer-container .col img {
-  display: block;
-  margin: 0 auto;
-  width: 140px;
-  cursor: pointer;
-}
-
-.footer-container .col .footerheading {
-  display: flex;
-  color:white ;
-  margin-top: 2.2px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.footer-container .col .footerpara {
-  display: flex;
-  margin-top: -12px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 4px;
-  justify-content: center;
-  cursor: pointer;
-}
-.fab:hover {
-  text-decoration: none;
-}
-
-.footer-container .col .sukoon {
-  color: rgb(30, 240, 191);
-  letter-spacing: 5px;
-}
-
-.footer-container .col .social-menu ul {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-container .col .social-menu ul a {
-  color: white;
-}
-.footer-container .col .social-menu ul a li{
-  transition: transform 250ms ease-out;
-}
-
-.footer-container .col .social-menu ul a li:hover {
-  transform: scale(1.4) !important;
-  text-decoration: none !important;
-}
-.footer-container .col .social-menu ul a li#social-twitter:hover{
-  color: 	#1DA1F2;
-}
-.footer-container .col .social-menu ul a li#social-github{
-  transition: transform  250ms ease-out, color 250ms ease-out, padding 250ms ease-out !important;
-}
-.footer-container .col .social-menu ul a li#social-github:hover{
-  transform: scale(1.2) !important;
-  color:black;
-  background-color: whitesmoke;
-  padding: 2px 2px 0px 2px;
-  border-radius: 25px;
-}
-.footer-container .col .social-menu ul a li#social-linkedin:hover{
-  color: #0A66C2;
-}
-
-.footer-container .col ul li {
-  list-style-type: none;
-  text-align: left;
-  margin-top: 0.5rem;
-}
-.footer-container .col ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-@media screen and (max-width: 600px) {
-  
-  .footer-container .col ul li {
-    text-align: center;
-  }
-
-  .footer-container {
-    text-align: center;
-  }
-
-  .footer-container .col .social-menu ul {
+    bottom: 0;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgb(122, 89, 193);
   }
-}
-
-.footercontent{
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-}
+  
+  .footer-side-col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+  }
+  
+  .footer-side-col > .col{
+    padding: 2.5rem;
+    flex-wrap: nowrap;
+  }
+  
+  .footer-container > .col {
+    padding: 2.5rem;
+    flex-basis: 20%;
+    color: white;
+  }
+  
+  .footer-container .col a:hover,
+  footer a:focus {
+    color: cyan;
+  }
+  
+  
+  .footer-container .col {
+      padding: 2rem;
+      flex-basis: 31%;
+    }
+  
+  .footer-container p {
+      color: white;
+      margin-top: 1rem;
+    }
+    .footerpara{
+      margin-left: -10px;
+    }
+    
+    .footer-container .col .email-id {
+      word-wrap: break-word;
+      text-decoration: underline;
+    }
+    
+    .email-id a{
+      text-decoration: none;
+      color: white;
+    }
+    
+    .footer-container .col h3 {
+      color: rgb(228, 26, 77);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+      font-family: "Ubuntu",sans-serif;
+    
+    }
+    .footer-container .col img {
+      display: block;
+      margin: 0 auto;
+      width: 140px;
+      cursor: pointer;
+    }
+    .footer-container .col .footerheading {
+      display: flex;
+      color:white ;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .footer-container .col .footerpara {
+      display: flex;
+      margin-top: -19px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      letter-spacing: 4px;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .fab:hover {
+      text-decoration: none;
+    }
+    
+    .footer-container .col .sukoon {
+      color: rgb(30, 240, 191);
+      letter-spacing: 5px;
+    }
+    
+    .footer-container .col .social-menu ul {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .footer-container .col .social-menu ul a {
+      color: white;
+    }
+    .footer-container .col .social-menu ul a li{
+      transition: transform 250ms ease-out;
+    }
+    
+    .footer-container .col .social-menu ul a li:hover {
+      transform: scale(1.4) !important;
+      text-decoration: none !important;
+    }
+    .footer-container .col .social-menu ul a li#social-twitter:hover{
+      color: 	#1DA1F2;
+    }
+    .footer-container .col .social-menu ul a li#social-github:hover{
+      color:#333;
+    }
+    .footer-container .col .social-menu ul a li#social-linkedin:hover{
+      color: #0A66C2;
+    }
+    
+    .footer-container .col ul li {
+      list-style-type: none;
+      text-align: left;
+      margin-top: 0.5rem;
+    }
+    .footer-container .col ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    .footercontent{
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+    }
