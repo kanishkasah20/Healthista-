@@ -99,7 +99,7 @@ body{
     margin: 0.2rem 0;
     text-align: center;
     color: rgb(122, 89, 193);
-    text-shadow: 2.5px 2px 1px rgb(122, 89, 193);
+    text-shadow: 2.5px 2px 1px black;
   }
   .image{
     width: 30rem;
@@ -123,8 +123,8 @@ body{
   }
   .about-goal h3{
     font-size: 2rem;
-    color: black;
-    text-shadow: 2.5px 2px 1px rgb(122, 89, 193);
+    color: rgb(122, 89, 193);
+    text-shadow: 2.5px 2px 1px black;
   }
 
   .about-goal h6{

@@ -154,13 +154,13 @@ body{
     height: 100vh;
   }
   .card {
-    margin: 8%;
+    margin: 7%;
     margin-bottom: 0.1%;
     height: 100%;
     width: 80%;
     border-color: rgb(131, 190, 245);
     --bs-info-border-subtle: #9eeaf9;
-    
+    margin-left: 50px;
   }
 
   /* --vedios-- */
