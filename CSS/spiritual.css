@@ -266,6 +266,7 @@ footer a:focus {
   display: inline-block;
   position: relative;
   color: white;
+  margin-left: -30px;
 }
 
 .footer-container .col ul li a:after {
@@ -318,6 +319,7 @@ footer a:focus {
 .footer-container .col .email-id {
   word-wrap: break-word;
   text-decoration: underline;
+  margin-left: 30px;
 }
 
 .email-id a{
@@ -367,7 +369,9 @@ footer a:focus {
 
 .footer-container .col .social-menu ul {
   display: flex;
-  gap: 1rem;
+  /* change */
+  gap: 3rem;
+  margin-left: 0.5px;
 }
 
 .footer-container .col .social-menu ul a {
