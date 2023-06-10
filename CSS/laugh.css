@@ -10,7 +10,7 @@ body{
 #nav-bar{
     position: sticky;
     top:0;
-    z-index: 10;;
+    z-index: 10;
 }
 .container-fluid{
     position: fixed;
@@ -322,6 +322,7 @@ body{
     display: inline-block;
     position: relative;
     color: white;
+    margin-left: -30px;
   }
   
   .footer-container .col ul li a:after {
@@ -374,6 +375,7 @@ body{
   .footer-container .col .email-id {
     word-wrap: break-word;
     text-decoration: underline;
+    margin-left: 30px;
   }
   
   .email-id a{
@@ -400,7 +402,7 @@ body{
     margin-top: 2.2px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     justify-content: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -423,7 +425,9 @@ body{
   
   .footer-container .col .social-menu ul {
     display: flex;
-    gap: 1rem;
+    /* gap phele 1rem and margin left 30px */
+    gap: 3rem; 
+    margin-left: 0.5px;
   }
   
   .footer-container .col .social-menu ul a {
