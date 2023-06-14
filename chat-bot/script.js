@@ -27,7 +27,7 @@ function createUserMessage(message) {
   
       // Process user message and generate bot response
       // Replace the code below with your actual logic
-      var botMessage = 'Thank you for your message! Our healthcare experts will get back to you soon.';
+      var botMessage = 'Thank you for your message! Our experts will get back to you soon.';
       setTimeout(function() {
         chatLog.appendChild(createBotMessage(botMessage));
         chatLog.scrollTop = chatLog.scrollHeight;
